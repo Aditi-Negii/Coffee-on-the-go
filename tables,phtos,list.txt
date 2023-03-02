@@ -1,0 +1,173 @@
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Learning HTML </title>
+		<link rel="stylesheet" type="text/css" href="coffeeshop.css">
+	</head>
+	<body >
+		<div>
+			<nav >
+				<a class="nav-bar"href="index.html"> Home |</a>
+				<a class="nav-bar"href="products.html"> Products|</a>
+				<a class="nav-bar" href="contacts.html">Contacts</a>
+			</nav>
+		</div>
+		<span style="border:2px solid blue; display: block;">span1</span>
+		<span style="border:2px solid red; display:block;">span2</span>
+		<br>
+		<div style="border: 2px solid green; display:inline;">
+			div1
+		</div>
+		<div style="border: 2px solid red; display: inline;">
+			div2
+		</div>
+
+
+
+		Types of coffee:
+		<ul class="ul-list">
+			<li>Latte</li>
+			<li>Expresso</li>
+			<li>Mocha</li>
+			<li>Cappuccino</li>
+		</ul>
+
+		<ol type="A">
+			<li>Choose coffee</li>
+			<li>Order coffee</li>
+			<li>payment</li>
+			<li>deliver</li>
+			<li>enjoy</li>
+		</ol>
+
+		<dl>
+			<dt>Aditi</dt>
+			<dd>Aditi is a girl.Her native place is in Uttarakhand but she has been born and brought up in Mumbai
+			</dd>
+
+			<dt>Amit</dt>
+			<dd>Amit is a boy. His native place is in Maharashtra but being an army kid he has been born and brought up in various places from india</dd>
+		</dl>
+		<div >
+			<table>
+				<caption> <h1>Coffee Menu</h1></caption>
+				<tr >
+					<th>Coffee Name</th>
+					<th>Price(in RS)</th>
+					<th>Availability</th>
+				</tr>
+				<tr class="out-of-stock">
+					<td>Mocha</td>
+					<td>140</td>
+					<td>Out of Stock</td>
+				</tr>
+				<tr class="available">
+					<td>Cappuccino</td>
+					<td>170</td>
+					<td>in Stock</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<div class="mocha dim " style="display: inline-block;">
+			<h4>MOCHA</h4>
+			<img class="img-mocha" src="mocha.png">
+		</div>
+
+
+		<div class="cap dim "style="display: inline-block;">
+			<h4>CAPPUCCINO</h4>
+			<img class="img-cap"src="cappuccino.png">
+		</div>
+
+		<footer style="text-align: center;">
+			<div style="height: 50%;">
+				<a href="index.html">Home</a>
+			</div>
+			<div style="height: 50%;">
+				designed by aditi negi
+			</div>
+		</footer>
+	</body>
+</html>
+
+CSS CODE
+
+
+*{
+	font-size:10px;
+}
+.mocha{
+	border-top-style: dotted;
+	border-top-color: red;
+	border-top-width: 2px;
+
+	border-bottom-style: dotted;
+	border-bottom-color: green;
+	border-bottom-width: 2px;
+
+	font-size: 14px;
+	font-style: italic;
+	font-family: Georgia;
+
+	
+}
+.cap{
+	border: 4px double green;
+	font-size: 20px;
+	font-style: oblique;
+	font-family: sans-serif;
+
+}
+.dim{
+	height:300px;
+	width: 300px
+}
+.img-mocha{
+	height:70%;
+	width: 100%;
+}
+.img-cap{
+	height:70%;
+	width: 100%;
+}
+
+
+table{
+	font-family: "Arial Black";
+	border: 2px solid green;
+	width:100%;
+}
+caption{
+	font-size: 23px;
+	color: steelblue;
+}
+th{
+	background-color: seagreen;
+	color:white;
+	font-size: 20px;
+	height: 10px;
+}
+
+tr{
+	text-align: center;
+	height:10px;
+	color:brown;
+	font-size:18px;
+}
+
+.out-of-stock:hover{
+	background-color: orangered;
+}
+
+.available:hover{
+	background-color: lightgreen;
+}
+.nav-bar:hover{
+	background-color: lightgreen;
+}
+.ul-list{
+	list-style-type: square;
+}
